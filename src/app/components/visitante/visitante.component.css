@@ -41,4 +41,7 @@ color: white;
  box-sizing: border-box;
  display: inline-block;
   }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
   

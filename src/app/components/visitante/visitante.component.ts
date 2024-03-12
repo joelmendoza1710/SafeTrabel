@@ -66,7 +66,7 @@ const NAMES: string[] = [
   styleUrls: ['./visitante.component.css']
 })
 export class VisitanteComponent implements OnInit {
-  displayedColumns: string[] = ['nombre', 'email', 'comentario','sitios', 'calificacion'];
+  displayedColumns: string[] = ['nombre', 'email', 'comentario','sitios', 'calificacion','editar','eliminar'];
   dataSource: MatTableDataSource<UserData>;
   @ViewChild(MatPaginator) paginator: MatPaginator 
   @ViewChild(MatSort) sort: MatSort 
