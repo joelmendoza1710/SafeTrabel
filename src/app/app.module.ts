@@ -24,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
+import { FormularioCreacionComponent } from './components/formulario-creacion/formulario-creacion.component';
+import { CargarscripService } from './cargarscrip.service';
 
 
 @NgModule({
@@ -32,10 +34,10 @@ import {MatIconModule} from '@angular/material/icon';
     AdminComponent,
     LoginComponent,
     VisitanteComponent,
-    HomeComponent
+    HomeComponent,
+    FormularioCreacionComponent
   ],
   imports: [
-    
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
@@ -60,7 +62,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatTooltipModule
     
   ],
-  providers: [],
+  providers: [
+    CargarscripService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
